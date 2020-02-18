@@ -30,18 +30,30 @@ console.log("Your javascript file is linked correctly.");
 // *Start of Code*
 let userHomeTeam = prompt("Which Pro Basketball Squad Is Your Home Team?");
 let userOpponent = prompt("Who Did They Play?");
-let userHomeTeamScore =  prompt(`How many points did ${userHomeTeam} score? (Home Team Score)`);
-let userOpponentScore = prompt(`How many points did ${userOpponent} score? (Visiting Team Score)`);
+let userHomeTeamScore = prompt(`How many points did the ${userHomeTeam} score? (Home Team Score)`);
+let userOpponentScore = prompt(`How many points did the ${userOpponent} score? (Visiting Team Score)`);
 parseInt(userHomeTeamScore);
 parseInt(userOpponentScore);
-
-if (userHomeTeamScore!= userOpponentScore && userHomeTeamScore>userOpponentScore) {
+// Winning Team Scenarios
+if (userOpponentScore != userHomeTeamScore && userOpponentScore < userHomeTeamScore) {
     alert(`Looks like the ${userHomeTeam} have defeated the ${userOpponent}!
     
     FINAL SCORE:
     Home/${userHomeTeam}: ${userHomeTeamScore}
     Visitors/${userOpponent}: ${userOpponentScore}`);
+    console.log("Home Team should be the declared winner."); //Check Log for what conditional ran
 }
+else {
+    alert(`Looks like the ${userHomeTeam} have defeated the ${userOpponent}!
+    
+    FINAL SCORE:
+    Home/${userHomeTeam}: ${userHomeTeamScore}
+    Visitors/${userOpponent}: ${userOpponentScore}`);
+    console.log("Visiting Team should be the declared winner."); //Check Log for what conditional ran
+}
+
+
+
 
 
 
