@@ -35,7 +35,17 @@ let userOpponentScore = prompt(`How many points did the ${userOpponent} score? (
 parseInt(userHomeTeamScore);
 parseInt(userOpponentScore);
 // Winning Team Scenarios
-if (userOpponentScore != userHomeTeamScore && userOpponentScore < userHomeTeamScore) {
+// Tie Situation
+if (userOpponentScore == userHomeTeamScore) {
+    alert(`Looks like the ${userHomeTeam} and the ${userOpponent} have tied!
+    
+    FINAL SCORE:
+    Home/${userHomeTeam}: ${userHomeTeamScore}
+    Visitors/${userOpponent}: ${userOpponentScore}`);
+    console.log("No Winner"); //Check Log for what conditional ran
+}
+// Home Team Wins
+else if (userOpponentScore < userHomeTeamScore) {
     alert(`Looks like the ${userHomeTeam} have defeated the ${userOpponent}!
     
     FINAL SCORE:
@@ -43,8 +53,9 @@ if (userOpponentScore != userHomeTeamScore && userOpponentScore < userHomeTeamSc
     Visitors/${userOpponent}: ${userOpponentScore}`);
     console.log("Home Team should be the declared winner."); //Check Log for what conditional ran
 }
+// Visiting Team Wins
 else {
-    alert(`Looks like the ${userHomeTeam} have defeated the ${userOpponent}!
+    alert(`Looks like the ${userOpponent} have defeated the ${userHomeTeam}!
     
     FINAL SCORE:
     Home/${userHomeTeam}: ${userHomeTeamScore}
