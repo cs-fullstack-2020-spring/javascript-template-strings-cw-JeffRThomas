@@ -1,3 +1,5 @@
+// !! : great file organization (again yay) and much better use of comments!
+
 // Kevin's Sanity Check
 console.log("Your javascript file is linked correctly.");
 // ---------------------------------------------------------------------------------------------------
@@ -25,43 +27,43 @@ console.log("Your javascript file is linked correctly.");
 // alert(congrats2U);
 // // *End of Code*
 // ---------------------------------------------------------------------------------------------------
-// ### Exercise 3:
-// Variable Declartation and Prompts for User Input
-// *Start of Code*
-let userHomeTeam = prompt("Which Pro Basketball Squad Is Your Home Team?");
-let userOpponent = prompt("Who Did They Play?");
-let userHomeTeamScore = prompt(`How many points did the ${userHomeTeam} score? (Home Team Score)`);
-let userOpponentScore = prompt(`How many points did the ${userOpponent} score? (Visiting Team Score)`);
-parseInt(userHomeTeamScore);
-parseInt(userOpponentScore);
-// Winning Team Scenarios
-// Tie Situation
-if (userOpponentScore == userHomeTeamScore) {
-    alert(`Looks like the ${userHomeTeam} and the ${userOpponent} have tied!
+// // ### Exercise 3:
+// // Variable Declartation and Prompts for User Input
+// // *Start of Code*
+// let userHomeTeam = prompt("Which Pro Basketball Squad Is Your Home Team?");
+// let userOpponent = prompt("Who Did They Play?");
+// let userHomeTeamScore = prompt(`How many points did the ${userHomeTeam} score? (Home Team Score)`);
+// let userOpponentScore = prompt(`How many points did the ${userOpponent} score? (Visiting Team Score)`);
+// parseInt(userHomeTeamScore);
+// parseInt(userOpponentScore);
+// // Winning Team Scenarios
+// // Tie Situation
+// if (userOpponentScore == userHomeTeamScore) {
+//     alert(`Looks like the ${userHomeTeam} and the ${userOpponent} have tied!
     
-    FINAL SCORE:
-    Home/${userHomeTeam}: ${userHomeTeamScore}
-    Visitors/${userOpponent}: ${userOpponentScore}`);
-    console.log("No Winner"); //Check Log for what conditional ran
-}
-// Home Team Wins
-else if (userOpponentScore < userHomeTeamScore) {
-    alert(`Looks like the ${userHomeTeam} have defeated the ${userOpponent}!
+//     FINAL SCORE:
+//     Home/${userHomeTeam}: ${userHomeTeamScore}
+//     Visitors/${userOpponent}: ${userOpponentScore}`);
+//     console.log("No Winner"); //Check Log for what conditional ran
+// }
+// // Home Team Wins
+// else if (userOpponentScore < userHomeTeamScore) {
+//     alert(`Looks like the ${userHomeTeam} have defeated the ${userOpponent}!
     
-    FINAL SCORE:
-    Home/${userHomeTeam}: ${userHomeTeamScore}
-    Visitors/${userOpponent}: ${userOpponentScore}`);
-    console.log("Home Team should be the declared winner."); //Check Log for what conditional ran
-}
-// Visiting Team Wins
-else {
-    alert(`Looks like the ${userOpponent} have defeated the ${userHomeTeam}!
+//     FINAL SCORE:
+//     Home/${userHomeTeam}: ${userHomeTeamScore}
+//     Visitors/${userOpponent}: ${userOpponentScore}`);
+//     console.log("Home Team should be the declared winner."); //Check Log for what conditional ran
+// }
+// // Visiting Team Wins
+// else {
+//     alert(`Looks like the ${userOpponent} have defeated the ${userHomeTeam}!
     
-    FINAL SCORE:
-    Home/${userHomeTeam}: ${userHomeTeamScore}
-    Visitors/${userOpponent}: ${userOpponentScore}`);
-    console.log("Visiting Team should be the declared winner."); //Check Log for what conditional ran
-}
+//     FINAL SCORE:
+//     Home/${userHomeTeam}: ${userHomeTeamScore}
+//     Visitors/${userOpponent}: ${userOpponentScore}`);
+//     console.log("Visiting Team should be the declared winner."); //Check Log for what conditional ran
+// }
 
 
 
